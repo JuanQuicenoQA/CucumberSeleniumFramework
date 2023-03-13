@@ -1,0 +1,16 @@
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/utils/ConfigLoader.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/factory/DriverFactory.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/apis/ApiTest.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/pages/LoginPage.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/pages/BasePage.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/steps/ProductsStepsDef.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/runners/MyRunnerTest.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/utils/PropertyUtils.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/apis/ApiTest2.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/steps/LoginStepsDef.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/constants/EndPoints.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/pages/ProductsPage.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/helper/GenericFunctions.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/models/Product.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/hooks/MyHooks.java
+/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/src/test/java/awesomecucumber/constants/EnvType.java

@@ -1,0 +1,123 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 23, Errors: 0, Skipped: 0, Time elapsed: 17.57 s <<< FAILURE! - in TestSuite
+awesomecucumber.apis.ApiTest.createProduct  Time elapsed: 0.818 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.createProduct(ApiTest.java:54)
+
+awesomecucumber.apis.ApiTest.createSerializedProduct  Time elapsed: 0.204 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.createSerializedProduct(ApiTest.java:101)
+
+awesomecucumber.apis.ApiTest.deleteProduct  Time elapsed: 0.016 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.deleteProduct(ApiTest.java:88)
+
+awesomecucumber.apis.ApiTest.deleteSerializedProduct  Time elapsed: 0.013 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.deleteSerializedProduct(ApiTest.java:127)
+
+awesomecucumber.apis.ApiTest.getCategories  Time elapsed: 0.007 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getCategories(ApiTest.java:15)
+
+awesomecucumber.apis.ApiTest.getDeserializedProduct  Time elapsed: 0.011 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getDeserializedProduct(ApiTest.java:202)
+
+awesomecucumber.apis.ApiTest.getProduct  Time elapsed: 0.007 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getProduct(ApiTest.java:35)
+
+awesomecucumber.apis.ApiTest.getProductAssert  Time elapsed: 0.007 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getProductAssert(ApiTest.java:137)
+
+awesomecucumber.apis.ApiTest.getProductSpecificAssert  Time elapsed: 0.006 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getProductSpecificAssert(ApiTest.java:152)
+
+awesomecucumber.apis.ApiTest.getProductSpecificAssertHeaders  Time elapsed: 0.006 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getProductSpecificAssertHeaders(ApiTest.java:183)
+
+awesomecucumber.apis.ApiTest.getProductSpecificAssertIndex  Time elapsed: 0.006 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getProductSpecificAssertIndex(ApiTest.java:167)
+
+awesomecucumber.apis.ApiTest.getProducts  Time elapsed: 0.006 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.getProducts(ApiTest.java:25)
+
+awesomecucumber.apis.ApiTest.updateProduct  Time elapsed: 0.007 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.updateProduct(ApiTest.java:73)
+
+awesomecucumber.apis.ApiTest.updateSerializedProduct  Time elapsed: 0.008 s  <<< FAILURE!
+java.net.ConnectException: Connection refused
+	at awesomecucumber.apis.ApiTest.updateSerializedProduct(ApiTest.java:114)
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Successfully Get Request", "API"](1)  Time elapsed: 2.14 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55636/devtools/browser/34c6efa0-7f6c-4b7a-80e5-a4cab7822c94
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Successfully Login into the WebApp", "Login"](2)  Time elapsed: 1.232 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55649/devtools/browser/562d57fc-e47a-48a9-95d7-ca47a4811925
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Failed Login into the WebApp", "Login"](3)  Time elapsed: 1.324 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55666/devtools/browser/0b767666-bd44-4932-8f79-2c41a7ee7c21
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Products that should not be listed in Products Section", "Add To Cart"](4)  Time elapsed: 1.517 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55678/devtools/browser/d80aa1e9-545a-4479-87fc-135571befdeb
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Products that should not be listed in Products Section", "Add To Cart"](5)  Time elapsed: 1.452 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55696/devtools/browser/505b5f88-87d2-4472-9eea-c53a224a3fad
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Products that should not be listed in Products Section", "Add To Cart"](6)  Time elapsed: 1.364 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55709/devtools/browser/32712b10-da9d-4423-8344-27ea91952197
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Products that should be listed in Products Section", "Add To Cart"](7)  Time elapsed: 1.499 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55722/devtools/browser/27dcbcbb-8875-404c-8f33-e6969fdf1848
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Products that should be listed in Products Section", "Add To Cart"](8)  Time elapsed: 1.617 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55739/devtools/browser/82bfb7f3-4575-4709-ab06-7e35c742df15
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+
+awesomecucumber.runners.MyRunnerTest.runScenario["Products that should be listed in Products Section", "Add To Cart"](9)  Time elapsed: 1.863 s  <<< FAILURE!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:55756/devtools/browser/25e730dc-1e17-4328-a405-8e802b9e95cc
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+

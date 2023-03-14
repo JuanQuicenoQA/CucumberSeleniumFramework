@@ -10,12 +10,18 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Random;
+
 public class MyHooks extends GenericFunctions {
     private static WebDriver driver;
+    Random random = new Random();
+    String[] availableBrowsers = {"Chrome", "Edge", "Firefox"};
+    String strRandomBrowser = availableBrowsers[random.nextInt(availableBrowsers.length)];
 
     @Before
-    public void before(){
-        driver = DriverFactory.initializeDriver(System.getProperty("browser", "chrome"));
+    public void before(Scenario scenario){
+        driver = DriverFactory.initializeDriver(System.getProperty("browser", strRandomBrowser));
+        scenario.log("*** " + strRandomBrowser + " Browser ***" + "\n");
     }
 
     @After(order=1) //Cucumber hook - runs for each scenario

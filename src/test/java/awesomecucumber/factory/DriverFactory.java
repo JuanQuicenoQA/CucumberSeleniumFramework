@@ -11,17 +11,17 @@ public class DriverFactory {
     private static WebDriver driver;
     public static WebDriver initializeDriver(String browser){
         switch (browser) {
-            case "chrome" -> {
+            case "Chrome" -> {
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
                 driver = new ChromeDriver(options);
             }
-            case "edge" -> {
+            case "Edge" -> {
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
             }
-            case "firefox" -> {
+            case "Firefox" -> {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
             }

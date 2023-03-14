@@ -18,6 +18,6 @@ public class BasePage {
         driver.get(ConfigLoader.getInstance().getBaseUrl() + endPoint);
     }
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
     protected static WebDriverWait wait;
 }

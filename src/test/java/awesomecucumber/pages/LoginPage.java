@@ -27,8 +27,9 @@ public class LoginPage extends BasePage{
         userPassField.sendKeys("secret_sauce");
     }
 
-    public static void clickLoginButton(){
+    public static ProductsPage clickLoginButton(){
         wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
+        return new ProductsPage(driver);
     }
 
     public static String getTextLoginErrorMessage() {

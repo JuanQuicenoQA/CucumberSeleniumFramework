@@ -1,802 +1,588 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="17.57" tests="23" errors="0" skipped="0" failures="23">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.372" tests="9" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="15"/>
+    <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="/Users/juanquiceno/.cache/selenium/chromedriver/mac64/111.0.5563.64/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/test-classes:/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/classes:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-java/7.10.1/cucumber-java-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-core/7.10.1/cucumber-core-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin/7.10.1/cucumber-gherkin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.10.1/cucumber-gherkin-messages-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/gherkin/25.0.2/gherkin-25.0.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/messages/19.1.4/messages-19.1.4.jar:/Users/juanquiceno/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-expressions/16.1.1/cucumber-expressions-16.1.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/datatable/7.10.1/datatable-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-plugin/7.10.1/cucumber-plugin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/docstring/7.10.1/docstring-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/html-formatter/20.2.0/html-formatter-20.2.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/juanquiceno/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-java/4.7.1/selenium-java-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.1/selenium-api-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.1/selenium-chrome-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/juanquiceno/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/juanquiceno/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/juanquiceno/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/juanquiceno/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/juanquiceno/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/juanquiceno/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.1/selenium-chromium-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.1/selenium-json-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.7.1/selenium-devtools-v106-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.7.1/selenium-devtools-v107-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.7.1/selenium-devtools-v108-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.1/selenium-devtools-v85-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.1/selenium-edge-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.1/selenium-firefox-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.1/selenium-http-4.7.1.jar:/Users/juanquiceno/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.7.1/selenium-ie-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.1/selenium-remote-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/juanquiceno/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/juanquiceno/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/juanquiceno/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/juanquiceno/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.1/selenium-manager-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.7.1/selenium-safari-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.1/selenium-support-4.7.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/juanquiceno/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/juanquiceno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/juanquiceno/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-testng/7.10.1/cucumber-testng-7.10.1.jar:/Users/juanquiceno/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/juanquiceno/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/juanquiceno/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/juanquiceno/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/juanquiceno/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/juanquiceno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/juanquiceno/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/juanquiceno/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.9.2/extentreports-cucumber7-adapter-1.9.2.jar:/Users/juanquiceno/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/juanquiceno/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/juanquiceno/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/juanquiceno/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.1/extent-pdf-report-2.9.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.1/cucumber-pdf-report-2.11.1.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/juanquiceno/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/juanquiceno/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/juanquiceno/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/juanquiceno/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/juanquiceno/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/juanquiceno/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/juanquiceno/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.class.path" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/test-classes:/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/classes:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-java/7.10.1/cucumber-java-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-core/7.10.1/cucumber-core-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin/7.10.1/cucumber-gherkin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.10.1/cucumber-gherkin-messages-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/gherkin/25.0.2/gherkin-25.0.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/messages/19.1.4/messages-19.1.4.jar:/Users/juanquiceno/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-expressions/16.1.1/cucumber-expressions-16.1.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/datatable/7.10.1/datatable-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-plugin/7.10.1/cucumber-plugin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/docstring/7.10.1/docstring-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/html-formatter/20.2.0/html-formatter-20.2.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/juanquiceno/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.1/selenium-java-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.1/selenium-api-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.1/selenium-chrome-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/juanquiceno/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/juanquiceno/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/juanquiceno/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/juanquiceno/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/juanquiceno/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.1/selenium-chromium-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.1/selenium-json-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.8.1/selenium-devtools-v108-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.1/selenium-devtools-v109-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.1/selenium-devtools-v110-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.1/selenium-devtools-v85-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.1/selenium-edge-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.1/selenium-firefox-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.1/selenium-http-4.8.1.jar:/Users/juanquiceno/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.1/selenium-ie-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.1/selenium-remote-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.87.Final/netty-transport-classes-kqueue-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.87.Final/netty-transport-native-kqueue-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api/1.22.0/opentelemetry-api-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-context/1.22.0/opentelemetry-context-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.22.0/opentelemetry-exporter-logging-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.22.0/opentelemetry-sdk-metrics-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.22.0-alpha/opentelemetry-sdk-logs-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.22.0-alpha/opentelemetry-api-logs-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.22.0/opentelemetry-sdk-common-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.22.0/opentelemetry-sdk-extension-autoconfigure-spi-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.22.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.22.0/opentelemetry-sdk-trace-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.22.0/opentelemetry-sdk-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.22.0-alpha/opentelemetry-semconv-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/juanquiceno/.m2/repository/net/bytebuddy/byte-buddy/1.12.22/byte-buddy-1.12.22.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/juanquiceno/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/juanquiceno/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/juanquiceno/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.1/selenium-manager-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.1/selenium-safari-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.1/selenium-support-4.8.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/juanquiceno/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/juanquiceno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/juanquiceno/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/juanquiceno/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/juanquiceno/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/juanquiceno/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/juanquiceno/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/juanquiceno/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/juanquiceno/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-testng/7.10.1/cucumber-testng-7.10.1.jar:/Users/juanquiceno/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/juanquiceno/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/juanquiceno/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/juanquiceno/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/juanquiceno/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/juanquiceno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/juanquiceno/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/juanquiceno/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.9.2/extentreports-cucumber7-adapter-1.9.2.jar:/Users/juanquiceno/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/juanquiceno/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/juanquiceno/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.1/extent-pdf-report-2.9.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.1/cucumber-pdf-report-2.11.1.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/juanquiceno/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/juanquiceno/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/juanquiceno/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/juanquiceno/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/juanquiceno/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/juanquiceno/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/juanquiceno/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/Users/juanquiceno/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
     <property name="user.timezone" value="America/Bogota"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="15"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CO"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/surefire/surefirebooter6362326454978582638.jar /Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/surefire 2023-03-13T18-27-16_892-jvmRun1 surefire3335128726714966236tmp surefire_012451393644621438710tmp"/>
+    <property name="sun.boot.library.path" value="/Users/juanquiceno/Library/Java/JavaVirtualMachines/corretto-17.0.6/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/surefire/surefirebooter17314172467661419579.jar /Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/surefire 2023-03-14T12-39-43_590-jvmRun1 surefire13905825532128858384tmp surefire_05788062692001645274tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/test-classes:/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/classes:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-java/7.10.1/cucumber-java-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-core/7.10.1/cucumber-core-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin/7.10.1/cucumber-gherkin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.10.1/cucumber-gherkin-messages-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/gherkin/25.0.2/gherkin-25.0.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/messages/19.1.4/messages-19.1.4.jar:/Users/juanquiceno/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-expressions/16.1.1/cucumber-expressions-16.1.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/datatable/7.10.1/datatable-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-plugin/7.10.1/cucumber-plugin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/docstring/7.10.1/docstring-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/html-formatter/20.2.0/html-formatter-20.2.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/juanquiceno/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-java/4.7.1/selenium-java-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.1/selenium-api-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.1/selenium-chrome-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/juanquiceno/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/juanquiceno/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/juanquiceno/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/juanquiceno/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/juanquiceno/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/juanquiceno/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.1/selenium-chromium-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.1/selenium-json-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.7.1/selenium-devtools-v106-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.7.1/selenium-devtools-v107-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.7.1/selenium-devtools-v108-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.1/selenium-devtools-v85-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.1/selenium-edge-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.1/selenium-firefox-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.1/selenium-http-4.7.1.jar:/Users/juanquiceno/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.7.1/selenium-ie-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.1/selenium-remote-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/juanquiceno/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/juanquiceno/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/juanquiceno/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/juanquiceno/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.1/selenium-manager-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.7.1/selenium-safari-driver-4.7.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.1/selenium-support-4.7.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/juanquiceno/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/juanquiceno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/juanquiceno/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-testng/7.10.1/cucumber-testng-7.10.1.jar:/Users/juanquiceno/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/juanquiceno/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/juanquiceno/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/juanquiceno/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/juanquiceno/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/juanquiceno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/juanquiceno/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/juanquiceno/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.9.2/extentreports-cucumber7-adapter-1.9.2.jar:/Users/juanquiceno/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/juanquiceno/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/juanquiceno/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/juanquiceno/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.1/extent-pdf-report-2.9.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.1/cucumber-pdf-report-2.11.1.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/juanquiceno/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/juanquiceno/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/juanquiceno/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/juanquiceno/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/juanquiceno/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/juanquiceno/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/juanquiceno/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/test-classes:/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/classes:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-java/7.10.1/cucumber-java-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-core/7.10.1/cucumber-core-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin/7.10.1/cucumber-gherkin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.10.1/cucumber-gherkin-messages-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/gherkin/25.0.2/gherkin-25.0.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/messages/19.1.4/messages-19.1.4.jar:/Users/juanquiceno/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-expressions/16.1.1/cucumber-expressions-16.1.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/datatable/7.10.1/datatable-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-plugin/7.10.1/cucumber-plugin-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/docstring/7.10.1/docstring-7.10.1.jar:/Users/juanquiceno/.m2/repository/io/cucumber/html-formatter/20.2.0/html-formatter-20.2.0.jar:/Users/juanquiceno/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/juanquiceno/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.1/selenium-java-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.1/selenium-api-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.1/selenium-chrome-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/juanquiceno/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/juanquiceno/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/juanquiceno/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/juanquiceno/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/juanquiceno/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/juanquiceno/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.1/selenium-chromium-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.1/selenium-json-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.8.1/selenium-devtools-v108-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.1/selenium-devtools-v109-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.1/selenium-devtools-v110-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.1/selenium-devtools-v85-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.1/selenium-edge-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.1/selenium-firefox-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.1/selenium-http-4.8.1.jar:/Users/juanquiceno/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.1/selenium-ie-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.1/selenium-remote-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-buffer/4.1.87.Final/netty-buffer-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-http/4.1.87.Final/netty-codec-http-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec/4.1.87.Final/netty-codec-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler/4.1.87.Final/netty-handler-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-common/4.1.87.Final/netty-common-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.87.Final/netty-transport-classes-epoll-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.87.Final/netty-transport-classes-kqueue-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.87.Final/netty-transport-native-epoll-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.87.Final/netty-transport-native-kqueue-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.87.Final/netty-transport-native-unix-common-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport/4.1.87.Final/netty-transport-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-resolver/4.1.87.Final/netty-resolver-4.1.87.Final.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api/1.22.0/opentelemetry-api-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-context/1.22.0/opentelemetry-context-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.22.0/opentelemetry-exporter-logging-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.22.0/opentelemetry-sdk-metrics-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.22.0-alpha/opentelemetry-sdk-logs-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.22.0-alpha/opentelemetry-api-logs-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.22.0/opentelemetry-sdk-common-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.22.0/opentelemetry-sdk-extension-autoconfigure-spi-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.22.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.22.0/opentelemetry-sdk-trace-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.22.0/opentelemetry-sdk-1.22.0.jar:/Users/juanquiceno/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.22.0-alpha/opentelemetry-semconv-1.22.0-alpha.jar:/Users/juanquiceno/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/juanquiceno/.m2/repository/net/bytebuddy/byte-buddy/1.12.22/byte-buddy-1.12.22.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/juanquiceno/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/juanquiceno/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/juanquiceno/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/juanquiceno/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/juanquiceno/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.1/selenium-manager-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.1/selenium-safari-driver-4.8.1.jar:/Users/juanquiceno/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.1/selenium-support-4.8.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/juanquiceno/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/juanquiceno/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/juanquiceno/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/juanquiceno/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/juanquiceno/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/juanquiceno/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/juanquiceno/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/juanquiceno/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/juanquiceno/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/juanquiceno/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/juanquiceno/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/juanquiceno/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/juanquiceno/.m2/repository/io/cucumber/cucumber-testng/7.10.1/cucumber-testng-7.10.1.jar:/Users/juanquiceno/.m2/repository/org/testng/testng/7.7.0/testng-7.7.0.jar:/Users/juanquiceno/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/juanquiceno/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/juanquiceno/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/juanquiceno/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/juanquiceno/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/juanquiceno/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/juanquiceno/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/juanquiceno/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/juanquiceno/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/juanquiceno/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/juanquiceno/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.9.2/extentreports-cucumber7-adapter-1.9.2.jar:/Users/juanquiceno/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/juanquiceno/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/juanquiceno/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.1/extent-pdf-report-2.9.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.1/cucumber-pdf-report-2.11.1.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/juanquiceno/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/juanquiceno/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/juanquiceno/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/juanquiceno/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/juanquiceno/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/juanquiceno/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/juanquiceno/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/juanquiceno/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/juanquiceno/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/juanquiceno/.m2/repository/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar:/Users/juanquiceno/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/juanquiceno"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2021-01-19"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/Users/juanquiceno/Library/Java/JavaVirtualMachines/corretto-17.0.6/Contents/Home"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/surefire/surefirebooter6362326454978582638.jar"/>
+    <property name="surefire.real.class.path" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework/target/surefire/surefirebooter17314172467661419579.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="java.runtime.version" value="17.0.6+10-LTS"/>
+    <property name="webdriver.edge.driver" value="/Users/juanquiceno/.cache/selenium/msedgedriver/mac64/111.0.1661.41/msedgedriver"/>
     <property name="user.name" value="juanquiceno"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="10.16"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="os.version" value="12.6.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.6.10.1"/>
     <property name="localRepository" value="/Users/juanquiceno/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
     <property name="java.io.tmpdir" value="/var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/"/>
     <property name="idea.version" value="2022.3.3"/>
-    <property name="java.version" value="15.0.2"/>
+    <property name="java.version" value="17.0.6"/>
     <property name="user.dir" value="/Users/juanquiceno/Documents/GitHub/CucumberSeleniumFramework"/>
     <property name="os.arch" value="x86_64"/>
+    <property name="webdriver.gecko.driver" value="/Users/juanquiceno/.cache/selenium/geckodriver/mac64/0.32.2/geckodriver"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/juanquiceno/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.6+10-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="59.0"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="createProduct" classname="awesomecucumber.apis.ApiTest" time="0.818">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.createProduct(ApiTest.java:54)
-]]></failure>
+  <testcase name="runScenario[&quot;Successfully Get Request&quot;, &quot;API&quot;](1)" classname="awesomecucumber.runners.MyRunnerTest" time="7.303">
+    <system-out><![CDATA[
+Scenario: Successfully Get Request       &amp#27;[90m# src/test/resources/awesomecucumber/Api.feature:3&amp#27;[0m
+
+    *** Firefox Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the Login Page&amp#27;[0m            &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.i_m_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mset the UserName and Password&amp#27;[0m     &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.set_the_username_and_password()&amp#27;[0m
+HTTP/1.1 200 OK
+Date: Tue, 14 Mar 2023 17:39:51 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 446
+Connection: keep-alive
+ETag: W/"1be-fOVBV6ZMfRTob+wUklEt5wWgpj0"
+set-cookie: sails.sid=s%3A9gFtnUWbSXVUPgzsErqlLkx5jKD-ENfE.lo%2BOvpocSGUivfEfycr0StcV9pmtJjkJVr4or%2Ftm2I0; Path=/; HttpOnly
+
+{
+    "args": {
+        "foo1": "jq1",
+        "foo2": "jq2",
+        "foo3": "jq3"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-6410b167-591bd2c87d2dc85a77446c12",
+        "accept": "*/*",
+        "user-agent": "Apache-HttpClient/4.5.13 (Java/17.0.6)",
+        "accept-encoding": "gzip,deflate"
+    },
+    "url": "https://postman-echo.com/get?foo1=jq1&foo2=jq2&foo3=jq3"
+}
+------------------------------------------------------------------------
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32msend a Get request to the Endpoint&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ApiStepDef.sendAGetRequestToTheEndpoint()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mstatus code is &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ApiStepDef.statusCodeIs(int)&amp#27;[0m
+]]></system-out>
     <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-]]></system-err>
-  </testcase>
-  <testcase name="createSerializedProduct" classname="awesomecucumber.apis.ApiTest" time="0.204">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.createSerializedProduct(ApiTest.java:101)
-]]></failure>
-  </testcase>
-  <testcase name="deleteProduct" classname="awesomecucumber.apis.ApiTest" time="0.016">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.deleteProduct(ApiTest.java:88)
-]]></failure>
-  </testcase>
-  <testcase name="deleteSerializedProduct" classname="awesomecucumber.apis.ApiTest" time="0.013">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.deleteSerializedProduct(ApiTest.java:127)
-]]></failure>
-  </testcase>
-  <testcase name="getCategories" classname="awesomecucumber.apis.ApiTest" time="0.007">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getCategories(ApiTest.java:15)
-]]></failure>
-  </testcase>
-  <testcase name="getDeserializedProduct" classname="awesomecucumber.apis.ApiTest" time="0.011">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getDeserializedProduct(ApiTest.java:202)
-]]></failure>
-  </testcase>
-  <testcase name="getProduct" classname="awesomecucumber.apis.ApiTest" time="0.007">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getProduct(ApiTest.java:35)
-]]></failure>
-  </testcase>
-  <testcase name="getProductAssert" classname="awesomecucumber.apis.ApiTest" time="0.007">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getProductAssert(ApiTest.java:137)
-]]></failure>
-  </testcase>
-  <testcase name="getProductSpecificAssert" classname="awesomecucumber.apis.ApiTest" time="0.006">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getProductSpecificAssert(ApiTest.java:152)
-]]></failure>
-  </testcase>
-  <testcase name="getProductSpecificAssertHeaders" classname="awesomecucumber.apis.ApiTest" time="0.006">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getProductSpecificAssertHeaders(ApiTest.java:183)
-]]></failure>
-  </testcase>
-  <testcase name="getProductSpecificAssertIndex" classname="awesomecucumber.apis.ApiTest" time="0.006">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getProductSpecificAssertIndex(ApiTest.java:167)
-]]></failure>
-  </testcase>
-  <testcase name="getProducts" classname="awesomecucumber.apis.ApiTest" time="0.006">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.getProducts(ApiTest.java:25)
-]]></failure>
-  </testcase>
-  <testcase name="updateProduct" classname="awesomecucumber.apis.ApiTest" time="0.007">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.updateProduct(ApiTest.java:73)
-]]></failure>
-  </testcase>
-  <testcase name="updateSerializedProduct" classname="awesomecucumber.apis.ApiTest" time="0.008">
-    <failure message="Connection refused" type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
-	at awesomecucumber.apis.ApiTest.updateSerializedProduct(ApiTest.java:114)
-]]></failure>
-  </testcase>
-  <testcase name="runScenario[&quot;Successfully Get Request&quot;, &quot;API&quot;](1)" classname="awesomecucumber.runners.MyRunnerTest" time="2.14">
-    <failure message="Unable to establish websocket connection to http://localhost:55636/devtools/browser/34c6efa0-7f6c-4b7a-80e5-a4cab7822c94&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55636/devtools/browser/34c6efa0-7f6c-4b7a-80e5-a4cab7822c94
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
-    <system-out><![CDATA[
-Scenario: Successfully Get Request    &amp#27;[90m# src/test/resources/awesomecucumber/Api.feature:3&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55636/devtools/browser/34c6efa0-7f6c-4b7a-80e5-a4cab7822c94
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mI'm on the Login Page&amp#27;[0m         &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.i_m_on_the_login_page()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mset the UserName and Password&amp#27;[0m  &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.set_the_username_and_password()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclick LoginButton&amp#27;[0m               &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.clickLoginButton()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe user is on &amp#27;[0m&amp#27;[36m&amp#27;[1m"Products"&amp#27;[0m&amp#27;[36m Page&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.theUserIsOnPage(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 4342
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:21 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
+1678815585231	geckodriver	INFO	Listening on 127.0.0.1:39392
+1678815585437	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "30960" "--r ... /[::1]:30960/" "-foreground" "-no-remote" "-profile" "/var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/rust_mozprofile5QMoCw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678815585960	Marionette	INFO	Marionette enabled
+2023-03-14 12:39:46.102 plugin-container[24156:598761] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:39:46.102 plugin-container[24156:598761] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-03-14 12:39:46.107 plugin-container[24156:598761] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:39:46.107 plugin-container[24156:598761] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-03-14 12:39:46.107 plugin-container[24156:598763] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:39:46.107 plugin-container[24156:598763] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1678815586212	Marionette	INFO	Listening on port 49958
+Read port: 49958
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+WebDriver BiDi listening on ws://127.0.0.1:30960
+1678815586361	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/rust_mozprofile5QMoCw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:30960/devtools/browser/0debb277-6d47-43ad-9488-39ee7a16b562
+1678815591399	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:50014
+1678815591401	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1678815591424	Marionette	INFO	Stopped listening on port 49958
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforJeaCvhaaSncgrei"p
+tW AeRrNrIoNr:G :r easdoduBrlcoec:k/er@/rgerseo/urmcodeu:l/es//gArsey/nmcSohduutdloewsn/.Assysy.nmjcsS, hlutdiownne.s y7s.2mj7s:: 72E7r:r1o5
+ard:d BlPohckaesr@rees ou"rpcreo:/f/ilgree-/bmeofdourlese/-Achangseyn"c Sihsut dfinoiswhne.ds,y si.tm jiss: t5o2o3 :l2a6t
+e atdo drBleogckiesr@treers ocuormcpel:e/t/igore/nm ocdounldesi/AtsiynocSnh u"tOdSo.wFni.lsey:s .fmjls:u4s5h 8I/:O1 5qu
+euseetd ubpeSfhuotrdeo wpnr@orfeisloeuBrecfeo:r/e/Cghraen/gmeo"d
+ulesJ/aovasSficlre/osifpitle _earsryonrc:_ frroents.ojurce://gsre/mm:o1d5u4l8e:s2/8A
+@sreysnocuSrhceu:t/d/ogwrn.es/ymso.dmujlse,s l/oinsef i7l2e/7o:s Efirlreo_ra:s yPnhca_sfer o"nptr.ojfsiml:e15-6b8e:f1o6r
+e@-rcehsaonugrec"e :i/s/ gfrieni/smhoeddu,l eist/ oissf itlooe .ljastme: 1t2o: 3r0
+eg@irsetesro ucrocmep:l/e/tgreio/nm ocdounldeitions /"TOeSl.eFmielter:y Stfolruashg eI./syOs .qumjesu:e1d0 :b2e8f
+or_ec pherckoPfeinldeiBnegPfionrgs@reesCohuarcneg:/e"/
+gJrae/vmoadSulcersi/pTetl eemretrroySern:d .rsyess.omujrsc:8e6:3/:/1g7r
+ese/tmuodpu@lreess/oAusrycnec:S/h/ugtrdeow/nm.osdyusl.emsj/sT,e llienmee tr72y7S:e nEd.rrsoyrs.m:j sP:h8a0s3e: 1"8pr
+oseftiulpe@-rbeesfoourrec-ec:h/a/nggree"/m oidsu lfeisn/iTsheelde,m eitt riysS etnood l.atsey sto. mrejgsi:st2e4r 1c:o3mp0l
+estieotn ucpoTndeilteioment "OrSy./Ftihlei:s .f_ludsehl Ia/yO eqduIenuedi tbTeafosrke <p@rroefsiolueBeforerCchea:n/g/eg"r
+Jea/vmaoScdriptu leersr/oTre:l ermeseourcte:/r/gyrCeo/nmtordoullleesr/PAasryennctS.hsuytsd.omwjns.:s8y2s9.:m3j6s
+,o blsienrev e7@2r7e:sourc e:E/rr/ogrr:e /Pmhaosdeu l"epsr/oAfsiylnec-Sbheuftodrowne.-scyhsa.ngmje"s :57i6:s1 6f
+i
+nWiARsNhINeGd:,  Ai tb liosck teor o laetnec outnot erreegdis taenr  ecrormpolr ewthiiolne  cwoen dwietrieo nw a"iOtSi.nFgi.l
+e  :  flu s h   I/ O   qBuloeckuere: d W abietfiongr efo rp rpoifng itlasekB
+ e f  o r e C   hPahansgee:" 
+TJelaevmeatSrycCrontirpoltl eer:r rWoarit:i ngr efosrour cep:e/n/dignrg ep/imngo adcutilveist/yA
+s  y n c  S h  u tSdtaotwen: .(snyos.nem)j
+sW,A RlNiInNGe:  E7r2r7o:r : EPrhraosre :" pPrhofiales-eb e"fporroe-fcihlaneg-eb"e ifsor ef-cihnaisnghee"d ,i ist  fiisn itosoh leadt,e  itot  riesgi sttoeor  lcaotmep lteot iroeng icsotnedri ticoomnp l"eOSt.iFoin lceon:d iftilouns "h OSI./FiOl eq:u feluusehd I/ Ob eqfueourede  befoprer opfroilfeiBleefBeorfoerCehChaannggee"
+"J
+aWvaASRcNrIiNptG :e rarodrd:B rlesoocukrceer:@//rgerse/omuodruclees://As/ygncrSe/humtdoodwnu.lseyss/.Amsjysn,c Slhiunted o7w2n7.:s yEsr.rmojrs:: 7P27h:a1s5
+e a"prodfidlBel-obcekfeorre@-rcehsaonugrec"e :i/s/ gfrie/mnodiulsehse/Adsy,n ciSth uis ttdooo wnl.astyes .tmoj sr:e5g2i3s:t26
+aedrdB locckero@mrepslouertcei:o/n/ gcroen/dmiotdiuolne s"/OASs.yFniclSeh:u tfdlouwsn.h sIy/sO. mqjuse:u458e:d1 5b
+esfeotruep SphruotfdiolwenB@erfeosroeuCrhcean:/g/eg"r
+e/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
 
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Successfully Login into the WebApp&quot;, &quot;Login&quot;](2)" classname="awesomecucumber.runners.MyRunnerTest" time="1.232">
-    <failure message="Unable to establish websocket connection to http://localhost:55649/devtools/browser/562d57fc-e47a-48a9-95d7-ca47a4811925&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55649/devtools/browser/562d57fc-e47a-48a9-95d7-ca47a4811925
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Successfully Login into the WebApp&quot;, &quot;Login&quot;](2)" classname="awesomecucumber.runners.MyRunnerTest" time="3.56">
     <system-out><![CDATA[
 Scenario: Successfully Login into the WebApp &amp#27;[90m# src/test/resources/awesomecucumber/Login.feature:3&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55649/devtools/browser/562d57fc-e47a-48a9-95d7-ca47a4811925
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mI'm on the Login Page&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.i_m_on_the_login_page()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mset the UserName and Password&amp#27;[0m         &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.set_the_username_and_password()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclick LoginButton&amp#27;[0m                      &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.clickLoginButton()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe user is on &amp#27;[0m&amp#27;[36m&amp#27;[1m"Products"&amp#27;[0m&amp#27;[36m Page&amp#27;[0m        &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.theUserIsOnPage(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 36639
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:22 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
 
+    *** Edge Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the Login Page&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.i_m_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mset the UserName and Password&amp#27;[0m         &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.set_the_username_and_password()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick LoginButton&amp#27;[0m                      &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.clickLoginButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe user is on &amp#27;[0m&amp#27;[32m&amp#27;[1m"Products"&amp#27;[0m&amp#27;[32m Page&amp#27;[0m        &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.theUserIsOnPage(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 111.0.1661.41 (57be51b50d1be232a9e8186a10017d9e06b1fd16) on port 6205
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+Mar 14, 2023 12:39:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Failed Login into the WebApp&quot;, &quot;Login&quot;](3)" classname="awesomecucumber.runners.MyRunnerTest" time="1.324">
-    <failure message="Unable to establish websocket connection to http://localhost:55666/devtools/browser/0b767666-bd44-4932-8f79-2c41a7ee7c21&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55666/devtools/browser/0b767666-bd44-4932-8f79-2c41a7ee7c21
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Failed Login into the WebApp&quot;, &quot;Login&quot;](3)" classname="awesomecucumber.runners.MyRunnerTest" time="4.799">
     <system-out><![CDATA[
 Scenario: Failed Login into the WebApp                                                                                 &amp#27;[90m# src/test/resources/awesomecucumber/Login.feature:9&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55666/devtools/browser/0b767666-bd44-4932-8f79-2c41a7ee7c21
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mI'm on the Login Page&amp#27;[0m                                                                                          &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.i_m_on_the_login_page()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mset a wrong UserName and Password&amp#27;[0m                                                                               &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.setAWrongUserNameAndPassword()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclick LoginButton&amp#27;[0m                                                                                                &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.clickLoginButton()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe system throws the error &amp#27;[0m&amp#27;[36m&amp#27;[1m"Epic sadface: Username and password do not match any user in this service"&amp#27;[0m&amp#27;[36m message&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.theSystemThrowsTheErrorMessage(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
+
+    *** Firefox Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI'm on the Login Page&amp#27;[0m                                                                                          &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.i_m_on_the_login_page()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mset a wrong UserName and Password&amp#27;[0m                                                                               &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.setAWrongUserNameAndPassword()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick LoginButton&amp#27;[0m                                                                                                &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.clickLoginButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system throws the error &amp#27;[0m&amp#27;[32m&amp#27;[1m"Epic sadface: Username and password do not match any user in this service"&amp#27;[0m&amp#27;[32m message&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.LoginStepsDef.theSystemThrowsTheErrorMessage(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 31195
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:23 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
+    <system-err><![CDATA[1678815595588	geckodriver	INFO	Listening on 127.0.0.1:22087
+1678815595638	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "42264" "--r ... /[::1]:42264/" "-foreground" "-no-remote" "-profile" "/var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/rust_mozprofileLbJ6Md"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678815596083	Marionette	INFO	Marionette enabled
+1678815596149	Marionette	INFO	Listening on port 50063
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+2023-03-14 12:39:56.183 plugin-container[24193:599657] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:39:56.184 plugin-container[24193:599657] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-03-14 12:39:56.187 plugin-container[24193:599657] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:39:56.187 plugin-container[24193:599657] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-03-14 12:39:56.187 plugin-container[24193:599664] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:39:56.187 plugin-container[24193:599664] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 50063
+WebDriver BiDi listening on ws://127.0.0.1:42264
+1678815596404	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/rust_mozprofileLbJ6Md/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42264/devtools/browser/6e6a03c2-9ef7-4c9d-9d38-4f31d5e4697d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1678815599774	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:50107
+1678815599776	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1678815599780	Marionette	INFO	Stopped listening on port 50063
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping actJiavviatSyc
+r   i p t   e   State: r(rnoorne:) 
+reWAsRoNuIrNcGe::/ /Ergrreo/rm:o dPuhlaesse/ "AprsoyfniclSe-befohruet-dcohwanng.es"y si.s mfjisn,i lshed,i nite  7i2s7 t:o oE rlraotre:  tPhaos registeer  c"pomropfliele-betfoire-changoe"n  icso nfdiniitsihoed,n i t" OiSs .tFoiol el:a tfe ltuos hre gIi/stOe rq cueomupelde tiboen fcoornedi tpirono f"iOlS.eFBielfeo:r efClhuansgh eI"/
+OWA RqNuIeuNeGd:  baedfdoBrleo cpkreorf@irleesBoeurcfeo:r/e/Cghraen/mgoed"u
+lJeasv/aAsScynrciSphtu terdroowrn:. sryess.omujrsc:e7:2/7/:g1r5e
+/amdoddBulloecsk/eArs@yrnceSshouurtcdeo:wn.sys.mjs, line 727: Error: P/ha/sger e"/pmroodfuillees-/bAesfyonrceS-chhauntgdeo"wn .issys .fimnjiss:h5e2d3,: 2i6t
+ adids Btloocok elra@tree stoou rrceeg:i/s/tgerre /cmoomdpulleteiso/nA csoyndnictSihount d"OoSw.nF.isyles:. fmljuss:h4 5I/8:O1 5q
+useeuteudp Sbheutfodorwen @prreosfouirlceeB:e/f/ogrreeC/hmaondguel"e
+sJ/aosvfailSec/roispfti le_earsrynorc:_ frreosnotu.rjcsem::/1/5g4r8e:/2m8o
+d@urleesso/uArscyen:c/S/hgurted/moowdnu.slyess/.omsjfsi,le /loisnfei l7e2_7a:s Eyrnrco_rf:r oPnht.ajssem ":p1r5o68f:i1l6e
+-@breefsooruer-cceha:n/g/eg"re /ims ofduilneiss/hoesfdil, ei.tj sims: 1t2o:o3 0l
+a@tree stoou rrceeg:i/s/tegrre /cmoomdpulleetsi/oTn ecloenmdeittriySont o"raOgSe..Fsiylse.:m jflsu:s1h0 :I2/8O
+ q_cuheueecdk Pbeenfdoirneg Ppirnogfsi@rleesBeoufrorceeC:h/a/nggree"/
+modules/TelemJeatvraScyrSiepntd .esryrso.mrj:s :r8e63so:u1r7c
+es:e/t/ugrpe@/rmeosdouulrecse/:A/s/ygnrceS/hmuotdduolwens./Tseylse.mmjs,e tlrinye 7S27e: ndE.rsryosr.m:j sPh:a8s03e: 1"p8r
+osfetiulpe-@breefsooruer-cceh:/a/nggre"e /imosd ufilneiss/hTeedl,e miett risy Setnodo. lsatye tos regi.ster commplejtions c:ondi2tion "OS.File: 4flush I/O queued be1fore: profileB3eforeCh0ang
+e"
+JsavaSecriptt eurropr: rTesoeurclee:m/e/tgrrye//tmhoidsu.l_edse/AlasyyendcISnhiuttTdaoswkn<.@sryess.omujs, lricnee: /7/2g7:r e/Emodurlerso/rT:e lPehmeaster y"Cporonftirleo-blelfeorrPaer-ecnht.asnygse."m jiss: 829:f3i6ni
+sohebds,er vit ies t@roesoo luatrce et:o/ /grreeg/imsotderu lceso/mpAlsetynicShuotdonwn. scyosn.dmijtsi:o5n7 6"OS:.1F6i
+l
+eW:A RfNlIuNsGh:  IA/ Ob lqoucekuered  ebnecfoournet eprreodf ialne Beerrfoorr ewChhialneg ew"e
+ JwaevreaS cwraiiptitn ge.r
+r or :  r e s  o ur  cBel:o/c/kgerre/:m o dTuelelse/mAetsryyncCoSnhturtodlowlner.:s yssh.umtjtsi,n g lidnoew n7
+2 7 :   E r r    Phase: profile-befoorre: -Pchhaasneg e-"tperolfeimelter-yb
+e f o  re -  c h a nSgtea"t ei:s  Efrrinisohedr,  giettt iins tgoo  sltaattee: t oE rrreorg:i sPthera se c"opmrpolfiele-beftorei-conh acnoge" insdi tiofn "OiS.Fnilei: flusshh I/Oe quedued ,bef ore piroftileB efoireChansge" 
+too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
 
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Products that should not be listed in Products Section&quot;, &quot;Add To Cart&quot;](4)" classname="awesomecucumber.runners.MyRunnerTest" time="1.517">
-    <failure message="Unable to establish websocket connection to http://localhost:55678/devtools/browser/d80aa1e9-545a-4479-87fc-135571befdeb&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55678/devtools/browser/d80aa1e9-545a-4479-87fc-135571befdeb
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Products that should not be listed in Products Section&quot;, &quot;Add To Cart&quot;](4)" classname="awesomecucumber.runners.MyRunnerTest" time="1.769">
     <system-out><![CDATA[
 Scenario Outline: Products that should not be listed in Products Section &amp#27;[90m# src/test/resources/awesomecucumber/Products.feature:11&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55678/devtools/browser/d80aa1e9-545a-4479-87fc-135571befdeb
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma user in the Home Page within "&amp#27;[0m&amp#27;[36m&amp#27;[1mPRODUCTS&amp#27;[0m&amp#27;[36m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36msearch for &amp#27;[0m&amp#27;[36m&amp#27;[1mPS5&amp#27;[0m                                                    &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe product &amp#27;[0m&amp#27;[36m&amp#27;[1mPS5&amp#27;[0m&amp#27;[36m should not be listed on Product Section&amp#27;[0m           &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_not_be_listed_on_product_section(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 14203
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:25 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
 
+    *** Edge Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user in the Home Page within "&amp#27;[0m&amp#27;[32m&amp#27;[1mProducts&amp#27;[0m&amp#27;[32m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32msearch for &amp#27;[0m&amp#27;[32m&amp#27;[1mPS5&amp#27;[0m                                                    &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe product &amp#27;[0m&amp#27;[32m&amp#27;[1mPS5&amp#27;[0m&amp#27;[32m should not be listed on Product Section&amp#27;[0m           &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_not_be_listed_on_product_section(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 111.0.1661.41 (57be51b50d1be232a9e8186a10017d9e06b1fd16) on port 12122
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+Mar 14, 2023 12:40:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Products that should not be listed in Products Section&quot;, &quot;Add To Cart&quot;](5)" classname="awesomecucumber.runners.MyRunnerTest" time="1.452">
-    <failure message="Unable to establish websocket connection to http://localhost:55696/devtools/browser/505b5f88-87d2-4472-9eea-c53a224a3fad&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55696/devtools/browser/505b5f88-87d2-4472-9eea-c53a224a3fad
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Products that should not be listed in Products Section&quot;, &quot;Add To Cart&quot;](5)" classname="awesomecucumber.runners.MyRunnerTest" time="3.665">
     <system-out><![CDATA[
 Scenario Outline: Products that should not be listed in Products Section &amp#27;[90m# src/test/resources/awesomecucumber/Products.feature:12&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55696/devtools/browser/505b5f88-87d2-4472-9eea-c53a224a3fad
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma user in the Home Page within "&amp#27;[0m&amp#27;[36m&amp#27;[1mPRODUCTS&amp#27;[0m&amp#27;[36m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36msearch for &amp#27;[0m&amp#27;[36m&amp#27;[1mPS4&amp#27;[0m                                                    &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe product &amp#27;[0m&amp#27;[36m&amp#27;[1mPS4&amp#27;[0m&amp#27;[36m should not be listed on Product Section&amp#27;[0m           &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_not_be_listed_on_product_section(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
+
+    *** Firefox Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user in the Home Page within "&amp#27;[0m&amp#27;[32m&amp#27;[1mProducts&amp#27;[0m&amp#27;[32m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32msearch for &amp#27;[0m&amp#27;[32m&amp#27;[1mPS4&amp#27;[0m                                                    &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe product &amp#27;[0m&amp#27;[32m&amp#27;[1mPS4&amp#27;[0m&amp#27;[32m should not be listed on Product Section&amp#27;[0m           &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_not_be_listed_on_product_section(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 3457
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:26 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
+    <system-err><![CDATA[1678815602145	geckodriver	INFO	Listening on 127.0.0.1:36780
+1678815602202	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "42693" "--r ... /[::1]:42693/" "-foreground" "-no-remote" "-profile" "/var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/rust_mozprofilexjTttL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678815602584	Marionette	INFO	Marionette enabled
+2023-03-14 12:40:02.677 plugin-container[24217:600345] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:40:02.677 plugin-container[24217:600345] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-03-14 12:40:02.680 plugin-container[24217:600345] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:40:02.680 plugin-container[24217:600345] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-03-14 12:40:02.680 plugin-container[24217:600347] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-03-14 12:40:02.680 plugin-container[24217:600347] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1678815602778	Marionette	INFO	Listening on port 50133
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+console.error: "Warning: unrecognized command line flag -remote-allow-origins\n"
+Read port: 50133
+WebDriver BiDi listening on ws://127.0.0.1:42693
+1678815602883	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/y4/lsybx5vs2gb13f0rb75y41qr0000gn/T/rust_mozprofilexjTttL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42693/devtools/browser/25739df7-783e-4cef-8c7a-a8405479a73a
+1678815605016	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:50156
+1678815605019	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1678815605021	Marionette	INFO	Stopped listening on port 50133
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/moduJlaevsa/SAcrsiypntc Sehrurtdown.osry:s .rmejsso:u4r5c8e::1/5/
+gsreet/upmSohduutldeosw/nA@sryenscSohuurctdeo:w/n/.gsysr.mej/sm,o dluilnese/ o7s2f7i:l eE/rorsofri:l eP_haassyen c"_pfrroofnit.lej-sbme:f1o5r48e:-2c8h
+a@nrgees"o urisc ef:/i/ngirse/hmeodd,u ilte si/so sftioloe /loastfiel et_oa sync_rfergoinstt.ejrs mc:o1m5p6l8e:t1i6on
+ @croensdouirtcieo:n/ /"gOrSe/mod.ules/osfile.jsm:12:30
+@resource://gre/modules/TelFemeitlrey:S tfolruasghe .Is/yOs .qmjsu:e1ue0d: 2b8e
+f_ocrhee cpkrPoefnidilnegBPeinfgosr@erCehasnoguer"c
+eJ:a/v/gaSrcer/impotd uelrerso/rT:e rleesmoeutrcre:y/S/egnrde./smyodsu.lmejs:s8/6As3y:n1cS7h
+ustedtouwpn@.rseyssou.rmcjes:,/ /lignree/ m7o2d7u:l eEsr/rToerl:e Pmehatsrey S"pernodfi.lsey-sb.emfjosr:e8-0c3h:a1n8g
+e"s eitsup @friensoiusrhceed:,/ /girte /imso dtuloeos/ Tlealtemee ttryoS enrde.gsiysst.emjrs :c2o4m1ple:t30i
+osne tcuopnTdeitleimoent r"yO/S.tFhiilse.:_ dfelluasyhe dII/nOit Tquaske<u@ered sboeufore profileBrecef:/o/rgreeCh/amnogdeu"l
+eJsa/vTaeSlcermieptt reyrrCoorn: trreoslolurecreP:a/r/genret/.msoydsu.lmejss/:A8s2y9n:c3S6
+huotbdsoewrnv.es@yrs.esmojusr,c el:i/n/eg r7e27/:m oEdrurloers:/A PshyansceS hu"tpdroofwinl.es-ysb.emfjos:r5e7-6c:ha1n6g
+e
+"W AiRs NfIiNnGi: sAh ebdl, oickte ri se ntcooou nlteartee dt oa nr eegrirsotr ewrh icleo mwpe lweetrieon  wcaoindtiitnigon.
+  " O S .    F i lBel:o cfkluers:h   IW/aOi tqiunge ufeodr  bepfionrge  ptrasokf
+i l e B ef o r e C h aPnhgae"se
+: JTaevlaemeStcrryiCpotn terrorollr:e r:resource://gre/modules/AsyncShutdown.sys.mj s, Wlianei t72i7n:g E rfroor:r Phase  p"epnrdoifng pingi laec-tbievfoirtey-c
+h a n g e "   i s   fStiantishee:d ,( niotn e)i
+sW ARtNoIoN Gl:a teE rtroo rr:e gPhisatsee r" cporomfplieltei-obne fcoorned-icthiaongn e""O Si.sF iflien:i sfhleuds,h  Ii/tO  iqsue uteodo  bleaftoe rteo  prreogfiislteeBre fcoormepClehatinogne "c
+oJnadviatSicorni p"OtS e.rFriolre::  rfelsuousrhc Ie:/O/ /qgureeu/edm obdeufloerse/ AprsofyinlceSBheuftordeowChna.sngyse."
+mWjAsR, NlIiNnGe: 7 2a7d:d BElrorckoerr@:r ePhsaosuer c"epr:of/il/eg-brefeo/rem-cohdanugle"e sis/ AfisyncShutdownins.hseyds,. mijts :i7s2 7t:o1o5 
+laadtdeB ltooc kreerg@irsetseoru rccoem:p/l/egtrieo/nm coodnduilteiso/nA s"yOnSc.ShFiutlde:ow fnl.usyssh. Im/jOs :q5u2e3u:2e6d
+ baedfdoBrleo pckreorfi@lreesBoeufrcoer:e/C/hgraen/gmeo"d
+JualveaSsc/rAispytn cerSrhourt:d orewsonu.rscyes:.m/j/sg:r4e/m58o:d15u
+lseest/uApsSyhnuctSdhouwtnd@owrne.ssyso.umrjcse, :l/i/gnree /7m2o7d:u lEersr/oors:f iPlhea/soes f"iplroef_iasleyn-cb_efrfoonrte.-jcshma:n1ge5"4 8i:s2 8
+fi@nriesshoeudr,c ei:t// girse t/omoo dullaetse/ to register completion condition "oOS.sFfiille:e /folsufsihl eI_a/sOy nqueuce_df rboenfto.rje smp:1r5o6f8i:l1e6Be
+f@orreesCohuarncgee":/
+/gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
 
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Products that should not be listed in Products Section&quot;, &quot;Add To Cart&quot;](6)" classname="awesomecucumber.runners.MyRunnerTest" time="1.364">
-    <failure message="Unable to establish websocket connection to http://localhost:55709/devtools/browser/32712b10-da9d-4423-8344-27ea91952197&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55709/devtools/browser/32712b10-da9d-4423-8344-27ea91952197
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Products that should not be listed in Products Section&quot;, &quot;Add To Cart&quot;](6)" classname="awesomecucumber.runners.MyRunnerTest" time="1.735">
     <system-out><![CDATA[
 Scenario Outline: Products that should not be listed in Products Section &amp#27;[90m# src/test/resources/awesomecucumber/Products.feature:13&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55709/devtools/browser/32712b10-da9d-4423-8344-27ea91952197
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma user in the Home Page within "&amp#27;[0m&amp#27;[36m&amp#27;[1mPRODUCTS&amp#27;[0m&amp#27;[36m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36msearch for &amp#27;[0m&amp#27;[36m&amp#27;[1mPS3&amp#27;[0m                                                    &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe product &amp#27;[0m&amp#27;[36m&amp#27;[1mPS3&amp#27;[0m&amp#27;[36m should not be listed on Product Section&amp#27;[0m           &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_not_be_listed_on_product_section(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 34122
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:27 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
 
+    *** Edge Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user in the Home Page within "&amp#27;[0m&amp#27;[32m&amp#27;[1mProducts&amp#27;[0m&amp#27;[32m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32msearch for &amp#27;[0m&amp#27;[32m&amp#27;[1mPS3&amp#27;[0m                                                    &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe product &amp#27;[0m&amp#27;[32m&amp#27;[1mPS3&amp#27;[0m&amp#27;[32m should not be listed on Product Section&amp#27;[0m           &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_not_be_listed_on_product_section(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 111.0.1661.41 (57be51b50d1be232a9e8186a10017d9e06b1fd16) on port 13664
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+Mar 14, 2023 12:40:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Products that should be listed in Products Section&quot;, &quot;Add To Cart&quot;](7)" classname="awesomecucumber.runners.MyRunnerTest" time="1.499">
-    <failure message="Unable to establish websocket connection to http://localhost:55722/devtools/browser/27dcbcbb-8875-404c-8f33-e6969fdf1848&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55722/devtools/browser/27dcbcbb-8875-404c-8f33-e6969fdf1848
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Products that should be listed in Products Section&quot;, &quot;Add To Cart&quot;](7)" classname="awesomecucumber.runners.MyRunnerTest" time="1.756">
     <system-out><![CDATA[
 Scenario Outline: Products that should be listed in Products Section       &amp#27;[90m# src/test/resources/awesomecucumber/Products.feature:23&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55722/devtools/browser/27dcbcbb-8875-404c-8f33-e6969fdf1848
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma user in the Home Page within "&amp#27;[0m&amp#27;[36m&amp#27;[1mPRODUCTS&amp#27;[0m&amp#27;[36m" section&amp#27;[0m                  &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36msearch for &amp#27;[0m&amp#27;[36m&amp#27;[1mSauce Labs Backpack&amp#27;[0m                                      &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe product &amp#27;[0m&amp#27;[36m&amp#27;[1mSauce Labs Backpack&amp#27;[0m&amp#27;[36m should be listed on Product Section&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_be_listed_on_product_section(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
+
+    *** Chrome Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user in the Home Page within "&amp#27;[0m&amp#27;[32m&amp#27;[1mProducts&amp#27;[0m&amp#27;[32m" section&amp#27;[0m                  &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32msearch for &amp#27;[0m&amp#27;[32m&amp#27;[1mSauce Labs Backpack&amp#27;[0m                                      &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe product &amp#27;[0m&amp#27;[32m&amp#27;[1mSauce Labs Backpack&amp#27;[0m&amp#27;[32m should be listed on Product Section&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_be_listed_on_product_section(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 28373
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 17478
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 13, 2023 6:27:29 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-
+Mar 14, 2023 12:40:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Products that should be listed in Products Section&quot;, &quot;Add To Cart&quot;](8)" classname="awesomecucumber.runners.MyRunnerTest" time="1.617">
-    <failure message="Unable to establish websocket connection to http://localhost:55739/devtools/browser/82bfb7f3-4575-4709-ab06-7e35c742df15&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55739/devtools/browser/82bfb7f3-4575-4709-ab06-7e35c742df15
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Products that should be listed in Products Section&quot;, &quot;Add To Cart&quot;](8)" classname="awesomecucumber.runners.MyRunnerTest" time="1.736">
     <system-out><![CDATA[
 Scenario Outline: Products that should be listed in Products Section            &amp#27;[90m# src/test/resources/awesomecucumber/Products.feature:24&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55739/devtools/browser/82bfb7f3-4575-4709-ab06-7e35c742df15
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma user in the Home Page within "&amp#27;[0m&amp#27;[36m&amp#27;[1mPRODUCTS&amp#27;[0m&amp#27;[36m" section&amp#27;[0m                       &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36msearch for &amp#27;[0m&amp#27;[36m&amp#27;[1mSauce Labs Fleece Jacket&amp#27;[0m                                      &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe product &amp#27;[0m&amp#27;[36m&amp#27;[1mSauce Labs Fleece Jacket&amp#27;[0m&amp#27;[36m should be listed on Product Section&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_be_listed_on_product_section(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 25255
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 13, 2023 6:27:31 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
 
+    *** Edge Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user in the Home Page within "&amp#27;[0m&amp#27;[32m&amp#27;[1mProducts&amp#27;[0m&amp#27;[32m" section&amp#27;[0m                       &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32msearch for &amp#27;[0m&amp#27;[32m&amp#27;[1mSauce Labs Fleece Jacket&amp#27;[0m                                      &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe product &amp#27;[0m&amp#27;[32m&amp#27;[1mSauce Labs Fleece Jacket&amp#27;[0m&amp#27;[32m should be listed on Product Section&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_be_listed_on_product_section(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting Microsoft Edge WebDriver 111.0.1661.41 (57be51b50d1be232a9e8186a10017d9e06b1fd16) on port 24401
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+Mar 14, 2023 12:40:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Products that should be listed in Products Section&quot;, &quot;Add To Cart&quot;](9)" classname="awesomecucumber.runners.MyRunnerTest" time="1.863">
-    <failure message="Unable to establish websocket connection to http://localhost:55756/devtools/browser/25e730dc-1e17-4328-a405-8e802b9e95cc&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:55756/devtools/browser/25e730dc-1e17-4328-a405-8e802b9e95cc
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-]]></failure>
+  <testcase name="runScenario[&quot;Products that should be listed in Products Section&quot;, &quot;Add To Cart&quot;](9)" classname="awesomecucumber.runners.MyRunnerTest" time="1.791">
     <system-out><![CDATA[
 Scenario Outline: Products that should be listed in Products Section     &amp#27;[90m# src/test/resources/awesomecucumber/Products.feature:25&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:55756/devtools/browser/25e730dc-1e17-4328-a405-8e802b9e95cc
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:258)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-	at awesomecucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:15)
-	at awesomecucumber.hooks.MyHooks.before(MyHooks.java:19)
-&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36ma user in the Home Page within "&amp#27;[0m&amp#27;[36m&amp#27;[1mPRODUCTS&amp#27;[0m&amp#27;[36m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36msearch for &amp#27;[0m&amp#27;[36m&amp#27;[1mSauce Labs Onesie&amp#27;[0m                                      &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mthe product &amp#27;[0m&amp#27;[36m&amp#27;[1mSauce Labs Onesie&amp#27;[0m&amp#27;[36m should be listed on Product Section&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_be_listed_on_product_section(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "scrShot" is null
-	at awesomecucumber.helper.GenericFunctions.takeSnapShot(GenericFunctions.java:14)
-	at awesomecucumber.hooks.MyHooks.takeScreenShotOnFailedScenario(MyHooks.java:29)
-&amp#27;[0m
-      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "awesomecucumber.hooks.MyHooks.driver" is null
-	at awesomecucumber.hooks.MyHooks.quitDriver(MyHooks.java:24)
-&amp#27;[0m
+
+    *** Chrome Browser ***
+
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user in the Home Page within "&amp#27;[0m&amp#27;[32m&amp#27;[1mProducts&amp#27;[0m&amp#27;[32m" section&amp#27;[0m                &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.a_user_in_the_home_page_within_something_section(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32msearch for &amp#27;[0m&amp#27;[32m&amp#27;[1mSauce Labs Onesie&amp#27;[0m                                      &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.search_for(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe product &amp#27;[0m&amp#27;[32m&amp#27;[1mSauce Labs Onesie&amp#27;[0m&amp#27;[32m should be listed on Product Section&amp#27;[0m &amp#27;[90m# awesomecucumber.steps.ProductsStepsDef.the_product_should_be_listed_on_product_section(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 37954
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 5965
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 13, 2023 6:27:32 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Invalid Status code=403 text=Forbidden
-java.io.IOException: Invalid Status code=403 text=Forbidden
-	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92)
-	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118)
-	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
-	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-
+Mar 14, 2023 12:40:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
 ]]></system-err>
   </testcase>
 </testsuite>

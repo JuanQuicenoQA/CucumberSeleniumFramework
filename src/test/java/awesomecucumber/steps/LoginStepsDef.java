@@ -39,7 +39,7 @@ public class LoginStepsDef {
 
     @And("click LoginButton")
     public void clickLoginButton() {
-        LoginPage.clickLoginButton();
+        productsPage = LoginPage.clickLoginButton();
     }
 
     @Then("the user is on {string} Page")

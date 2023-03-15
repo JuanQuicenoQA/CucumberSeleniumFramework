@@ -11,8 +11,8 @@ public class ConfigLoader {
     private ConfigLoader() {
         String env = System.getProperty("env", String.valueOf(EnvType.TEST));
         switch (EnvType.valueOf(env)) {
-            case DEV -> properties = PropertyUtils.propertyLoader("src/test/resources/dev_config.properties");
-            case TEST -> properties = PropertyUtils.propertyLoader("src/test/resources/test_config.properties");
+            case DEV -> properties = PropertyUtils.propertyLoader("src/test/resources/dev_env_config.properties");
+            case TEST -> properties = PropertyUtils.propertyLoader("src/test/resources/test_env_config.properties");
             default -> throw new IllegalStateException("Invalid environment" + env);
         }
     }

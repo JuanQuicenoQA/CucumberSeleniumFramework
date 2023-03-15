@@ -21,7 +21,7 @@ public class MyHooks extends GenericFunctions {
     @Before
     public void before(Scenario scenario){
         driver = DriverFactory.initializeDriver(System.getProperty("browser", strRandomBrowser));
-        scenario.log("*** " + strRandomBrowser + " Browser ***" + "\n");
+        scenario.log("*** " + strRandomBrowser.toUpperCase() + " Browser ***" + "\n");
     }
 
     @After(order=1) //Cucumber hook - runs for each scenario

@@ -2,7 +2,7 @@ package awesomecucumber.constants;
 
 public enum EndPoints {
 
-    BASEPAGE(""),
+    BASEPAGE("/"),
     PRODUCTS("/products"),
     ACCOUNT("/account");
 

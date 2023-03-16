@@ -1,6 +1,6 @@
 package awesomecucumber.hooks;
 
-import awesomecucumber.factory.DriverFactory;
+import awesomecucumber.factory.DriverManager;
 import awesomecucumber.helper.GenericFunctions;
 import awesomecucumber.runners.MyRunnerTest;
 import io.cucumber.java.After;
@@ -11,15 +11,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import java.util.Random;
-
 public class MyHooks extends GenericFunctions {
     private static WebDriver driver;
 
 
     @Before
     public void before(Scenario scenario){
-        driver = DriverFactory.initializeDriver(System.getProperty("browser", MyRunnerTest.browserName));
+        driver = DriverManager.initializeDriver(System.getProperty("browser", MyRunnerTest.browserName));
         scenario.log("*** " + MyRunnerTest.browserName + " Browser ***" + "\n");
     }
 

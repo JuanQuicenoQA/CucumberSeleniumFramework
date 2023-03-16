@@ -2,7 +2,7 @@ package awesomecucumber.steps;
 
 import awesomecucumber.pages.ProductsPage;
 import awesomecucumber.constants.EndPoints;
-import awesomecucumber.factory.DriverFactory;
+import awesomecucumber.factory.DriverManager;
 import awesomecucumber.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -21,7 +21,7 @@ public class LoginStepsDef {
 
     @Given("I'm on the Login Page")
     public void i_m_on_the_login_page() {
-        driver = DriverFactory.getDriver();
+        driver = DriverManager.getDriver();
         new LoginPage(driver).loadEndpoint(EndPoints.BASEPAGE.url);
     }
 

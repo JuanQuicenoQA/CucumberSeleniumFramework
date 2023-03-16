@@ -2,6 +2,7 @@ package awesomecucumber.hooks;
 
 import awesomecucumber.factory.DriverFactory;
 import awesomecucumber.helper.GenericFunctions;
+import awesomecucumber.runners.MyRunnerTest;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -14,14 +15,12 @@ import java.util.Random;
 
 public class MyHooks extends GenericFunctions {
     private static WebDriver driver;
-    Random random = new Random();
-    String[] availableBrowsers = {"Chrome", "Edge", "Firefox"};
-    String strRandomBrowser = availableBrowsers[random.nextInt(availableBrowsers.length)];
+
 
     @Before
     public void before(Scenario scenario){
-        driver = DriverFactory.initializeDriver(System.getProperty("browser", strRandomBrowser));
-        scenario.log("*** " + strRandomBrowser.toUpperCase() + " Browser ***" + "\n");
+        driver = DriverFactory.initializeDriver(System.getProperty("browser", MyRunnerTest.browserName));
+        scenario.log("*** " + MyRunnerTest.browserName + " Browser ***" + "\n");
     }
 
     @After(order=1) //Cucumber hook - runs for each scenario

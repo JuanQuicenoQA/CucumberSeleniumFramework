@@ -30,7 +30,7 @@ public class MyHooks extends GenericFunctions {
     public void takeScreenShotOnFailedScenario(@NotNull Scenario scenario) throws Exception {
         if ((scenario.isFailed())) {
             final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", "Failed scenario screenshot");
+            scenario.attach(screenshot, "image/png", " Failed scenario screenshot");
         }
     }
 }
